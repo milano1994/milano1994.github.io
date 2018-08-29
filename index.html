@@ -18,6 +18,7 @@
    
   </header>
   <main>
+    <button id="btn">OpenWeibo</button>
     <section>
       <p>日语能力考试用户名：身份证号</p>::<p>密码:Hufan1986</p>
     </section>
@@ -25,5 +26,12 @@
     <label for="inp2">Input2</label><input id="inp2" type="text">
   </main>
    <script type="text/javascript" src="app.js"></script>
+    <script>
+            document.getElementById('btn').onclick = function(){
+            var childWindow = window.open('about:blank');
+            childWindow.location.href = "weibo://";
+            }
+            
+    </script>
   </body>
 </html>
