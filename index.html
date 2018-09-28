@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="app.css">
    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
+<script src="http://vjs.zencdn.net/4.12/video.js"></script>
   </head>
   <body>
   <header>David Home<i class="fas fa-align-justify text-right" id="chg"></i>
@@ -18,8 +20,12 @@
    
   </header>
   <main>
-    <video src="demo.swf" width="320" height="240" autoplaycontrolsloop>
-Your browser does not support the video tag.
+    <video id="example_video_1" class="video-js vjs-default-skin"
+  controls preload="auto" width="640" height="264"
+  poster="http://video-js.zencoder.com/oceans-clip.png"
+  data-setup='{"example_option":true}'>
+ <source src="/demo.swf" />
+ <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
 </video>
     <object data="demo.swf" type="application/x-shockwave-flash">
         <param name="movie" value="demo.swf"/>
